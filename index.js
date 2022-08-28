@@ -33,12 +33,12 @@ app.get('/', (req, res) => {
 //mongodb+srv://fernando:zaratustra@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority
 
 // entregar uma porta
-const DB_user = process.env.DB_user
-const DB_password = encodeURIComponent(process.env.DB_password)
+const DB_USER = process.env.DB_user
+const DB_PASSWORD = encodeURIComponent(process.env.DB_password)
 
 mongoose
     .connect(
-      `mongodb+srv://${DB_user}:${DB_password}@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority`
+      `mongodb+srv://${DB_USER}:${DB_PASSWORD}@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority`
     )
     .then(() => {
       console.log("Conectamos ao MongoDB!")
