@@ -1,4 +1,5 @@
 // config inicial
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
@@ -32,10 +33,16 @@ app.get('/', (req, res) => {
 //mongodb+srv://fernando:zaratustra@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority
 
 // entregar uma porta
-mongoose.connect('mongodb+srv://fernando:zaratustra@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority')
-.then(() => {
-    console.log("Conectamos ao MongoDB!")
-    app.listen(3000)
+const DB_user = process.env.DB_user
+const DB_password = encodeURIComponent(process.env.DB_password)
+
+mongoose
+    .connect(
+      `mongodb+srv://${DB_user}:${DB_password}@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority`
+    )
+    .then(() => {
+      console.log("Conectamos ao MongoDB!")
+      app.listen(3000)
 })
 .catch((err) => console.log(err))
 
