@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 // zaratustra
 
-//mongodb+srv://fernando:zaratustra@fernandocluster.edy3qoy.mongodb.net/?retryWrites=true&w=majority
+//mongodb+srv://***senha e cluster****.edy3qoy.mongodb.net/?retryWrites=true&w=majority
 
 // entregar uma porta
 const DB_USER = process.env.DB_user
