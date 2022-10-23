@@ -13,7 +13,7 @@
 
 <h3>Features</h3>
 <p align="center">
-<img src= alt="Cadastro de usuário">
+
 CRUD para cadastro de usuários
 </p>
 
