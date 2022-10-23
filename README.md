@@ -1,6 +1,6 @@
 <h1>CRUD do Fernando</h1>
 <p>Programa que permite criar, ler, atualizar e deletar usuário do sistema</p>
-<h2 align="center"><a href="" > Slides </a></h2>
+<h2 align="center"><a href="" > </a></h2>
 
 <h3>Pré-Requisitos</h3>
 <ul>
@@ -13,7 +13,7 @@
 
 <h3>Features</h3>
 <p align="center">
-<img src="" alt="Cadastro de usuário">
+<img src= alt="Cadastro de usuário">
 CRUD para cadastro de usuários
 </p>
 
